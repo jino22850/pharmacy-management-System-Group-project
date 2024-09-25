@@ -1,0 +1,13 @@
+http://localhost/phamacy_project/ADMIN/services/login.php
+
+http://localhost/phamacy_project/ADMIN/services/update.php
+
+http://localhost/phamacy_project/USER/services/registration.php
+
+http://localhost/phamacy_project/USER/services/login.php
+
+http://localhost/phamacy_project/ADMIN/services/adminDash.php
+
+http://localhost/phamacy_project
+
+http://localhost/phamacy_project/ADMIN/services/login.php

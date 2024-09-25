@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ada.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+<div class="cart-container" id="cart-container-1">
+    <div class="cart-item">
+        <img src="1.jpg" alt="Product Image">
+        <div class="item-details">
+            <h2>Product Name</h2>
+            <p class="price">$19.99</p>
+            <div class="quantity-container">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity-1" name="quantity" value="1" min="1">
+            </div>
+        </div>
+        <button class="remove-btn" onclick="removeItem('cart-container-1')">Remove</button>
+    </div>
+    <!-- Add more items as needed -->
+
+    <div class="total-container">
+        <p>Total: $19.99</p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<div class="cart-container" id="cart-container-2">
+    <div class="cart-item">
+        <img src="2.png" alt="Product Image">
+        <div class="item-details">
+            <h2>Product Name</h2>
+            <p class="price">Rs300.00</p>
+            <div class="quantity-container">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity-2" name="quantity" value="1" min="1">
+            </div>
+        </div>
+        <button class="remove-btn" onclick="removeItem('cart-container-2')">Remove</button>
+    </div>
+    <!-- Add more items as needed -->
+
+    <div class="total-container">
+        <p>Total: Rs.200</p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<!-- Add more cart containers as needed -->
+
+<script>
+    function removeItem(containerId) {
+        var container = document.getElementById(containerId);
+        container.parentNode.removeChild(container);
+    }
+</script>
+
+</body>
+</html>
